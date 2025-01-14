@@ -1,10 +1,11 @@
 // Problem #1 // 
-function getYearlySubscribers(){
-   
+function getYearlySubscribers(users){
+    return users.filter(user => user.subscription.type === 'Yearly');
 }
 
 // Problem #2 //
-function getTheaterGoers(){
+function getTheaterGoers(users){
+    return users.filter(user => user.watched.platform === "theater");
     
 }
 
